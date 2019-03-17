@@ -44,9 +44,22 @@ const MemberProfile = (props) => {
         />
         <CardContent>
           <MuiThemeProvider theme={theme}>
-            <Typography variant="subtitle1" color="primary">{ props.memberName }</Typography>
-            <Typography color="secondary">{ props.memberTitle }</Typography>
-            <Typography color="secondary">{ props.memberPeriod }</Typography>
+            <Typography 
+            variant="subtitle1" 
+            align="center" 
+            color="primary">
+              { props.memberName }
+            </Typography>
+            <Typography 
+            align="center" 
+            color="secondary">
+              { props.memberTitle }
+            </Typography>
+            <Typography 
+            align="center" 
+            color="secondary">
+              { props.memberPeriod }
+            </Typography>
           </MuiThemeProvider>
         </CardContent>
       </Card>
