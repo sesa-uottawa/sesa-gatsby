@@ -39,7 +39,13 @@ const Layout = ({ children }) => (
           }}
         >
           {children}
-          <MemberProfile memberName="Name LastName" memberTitle="Title" memberPeriod="Tenure"></MemberProfile>
+          {
+            // This is just an example
+          }
+          <MemberProfile 
+          memberName="Name LastName" 
+          memberTitle="Title" 
+          memberPeriod="Tenure"></MemberProfile>
         </div>
 
       </>
