@@ -25,8 +25,8 @@ const theme = createMuiTheme({
 
 const MemberProfile = (props) => {
   var file = 'default-male-photo.png'
-  if (props.fileName) {
-    file = props.fileName;
+  if (props.photoFile) {
+    file = props.photoFile;
   }
   return (
     <div>
@@ -58,7 +58,7 @@ const MemberProfile = (props) => {
             <Typography 
             align="center" 
             color="secondary">
-              { props.memberPeriod }
+              { props.memberTenure }
             </Typography>
           </MuiThemeProvider>
         </CardContent>
