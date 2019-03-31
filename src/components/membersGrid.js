@@ -6,14 +6,13 @@ import createTypography from '@material-ui/core/styles/createTypography';
 import createPalette from '@material-ui/core/styles/createPalette';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
 import Helmet from 'react-helmet'
-import { transform } from 'popmotion';
 
 const currentMembers = [
   {
     name: 'Anushka Paliwal',
     title: 'President',
     tenure: '2015-Present',
-    photoFile: '',
+    photoFile: 'default-female-photo.jpg',
   },
   {
     name: 'Tolu Olubode',
@@ -37,7 +36,7 @@ const currentMembers = [
     name: 'Melody Habbouche',
     title: 'VP Communication',
     tenure: '2015-Present',
-    photoFile: '',
+    photoFile: 'default-female-photo.jpg',
   },
   {
     name: 'Harsh Gupta',
@@ -49,7 +48,7 @@ const currentMembers = [
     name: 'Amelie Khan',
     title: 'VP Community Engagement',
     tenure: '2017-Present',
-    photoFile: '',
+    photoFile: 'default-female-photo.jpg',
   },
   {
     name: 'Munir Aljawahari',
@@ -61,13 +60,13 @@ const currentMembers = [
     name: 'Sagal Maxamud',
     title: 'Academic Coordinator',
     tenure: '2018-Present',
-    photoFile: '',
+    photoFile: 'default-female-photo.jpg',
   },
   {
     name: 'Maulik Shah',
     title: 'Event Coordinator',
     tenure: '2018-Present',
-    photoFile: '',
+    photoFile: 'maulik.png',
   },
   {
     name: 'Sanat Nayar',
@@ -128,6 +127,7 @@ const MembersGrid = () => (
     <Typography 
       align="center" 
       variant="title"
+      variant="title"
       color="primary"
       style={{
         fontSize:"3rem"
@@ -154,7 +154,7 @@ const MembersGrid = () => (
       alignItems="center"
       spacing={16}
       style={{
-        width:'75rem'
+        width:'75%'
       }}
     >
       {currentMembers.slice(0, 6).map(function(member, index) {
@@ -162,6 +162,9 @@ const MembersGrid = () => (
           <Grid
             item
             key={index}
+            xs={12}
+            sm={6}
+            lg={4}
             style={{
               width: '30%',
             }}
@@ -195,7 +198,7 @@ const MembersGrid = () => (
       alignItems="center"
       spacing={16}
       style={{
-        width:'75rem'
+        width:'75%'
       }}
     >
       {currentMembers.slice(6).map(function(member, index) {
@@ -203,6 +206,9 @@ const MembersGrid = () => (
           <Grid
             item
             key={index}
+            xs={12}
+            sm={6}
+            lg={4}
             style={{
               width: '30%',
             }}
