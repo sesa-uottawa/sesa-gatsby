@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
-import MemberProfile from './memberProfile'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -39,13 +38,6 @@ const Layout = ({ children }) => (
           }}
         >
           {children}
-          {
-            // This is just an example
-          }
-          <MemberProfile 
-          memberName="Name LastName" 
-          memberTitle="Title" 
-          memberPeriod="Tenure"></MemberProfile>
         </div>
 
       </>
