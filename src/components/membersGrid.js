@@ -21,7 +21,7 @@ const currentMembers = [
     photoFile: 'tolu.jpg',
   },
   {
-    name: 'Faizaan Christie',
+    name: 'Faizaan Chishtie',
     title: 'VP Academic',
     tenure: '2018-Present',
     photoFile: '',
