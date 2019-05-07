@@ -21,7 +21,7 @@ const currentMembers = [
     photoFile: 'tolu.jpg',
   },
   {
-    name: 'Faizaan Christie',
+    name: 'Faizaan Chishtie',
     title: 'VP Academic',
     tenure: '2018-Present',
     photoFile: '',
@@ -111,6 +111,33 @@ const theme = createMuiTheme({
   typography: typography
 });
 
+const memberProfileGenerator = (startIndex, endIndex) => (
+  currentMembers
+  .slice(startIndex, endIndex)
+  .map(function(member, index) {
+    return (
+      <Grid
+        item
+        key={index}
+        xs={12}
+        sm={6}
+        lg={4}
+        style={{
+          width: '30%',
+        }}
+      >
+        <MemberProfile
+          memberName={member.name}
+          memberTitle={member.title}
+          memberTenure={member.tenure}
+          photoFile={member.photoFile}
+        />
+      </Grid>
+    )
+  })
+)
+
+
 const MembersGrid = () => (
   <Grid 
     container
@@ -157,27 +184,9 @@ const MembersGrid = () => (
         width:'75%'
       }}
     >
-      {currentMembers.slice(0, 6).map(function(member, index) {
-        return (
-          <Grid
-            item
-            key={index}
-            xs={12}
-            sm={6}
-            lg={4}
-            style={{
-              width: '30%',
-            }}
-          >
-            <MemberProfile
-              memberName={member.name}
-              memberTitle={member.title}
-              memberTenure={member.tenure}
-              photoFile={member.photoFile}
-            />
-          </Grid>
-        )
-      })}
+      {
+        memberProfileGenerator(0, 6)
+      }
     </Grid>
     <br/>
     <br/>
@@ -201,27 +210,9 @@ const MembersGrid = () => (
         width:'75%'
       }}
     >
-      {currentMembers.slice(6).map(function(member, index) {
-        return (
-          <Grid
-            item
-            key={index}
-            xs={12}
-            sm={6}
-            lg={4}
-            style={{
-              width: '30%',
-            }}
-          >
-            <MemberProfile
-              memberName={member.name}
-              memberTitle={member.title}
-              memberTenure={member.tenure}
-              photoFile={member.photoFile}
-            />
-          </Grid>
-        )
-      })}
+      {
+        memberProfileGenerator(6)
+      }
     </Grid>
     </MuiThemeProvider>
   </Grid>
