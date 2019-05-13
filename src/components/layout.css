@@ -634,6 +634,7 @@ pre tt:after {
   letter-spacing: 1px;
 }
 .title {
+  color: #fff;
   opacity: 0.9;
   font: 400 2.5em 'Open Sans', sans-serif;
   text-transform: uppercase;

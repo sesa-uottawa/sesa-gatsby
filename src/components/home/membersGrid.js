@@ -26,7 +26,7 @@ class MembersGrid extends React.PureComponent {
       name: 'Faizaan Chishtie',
       title: 'VP Academic',
       tenure: '2018-Present',
-      photoFile: '',
+      photoFile: 'faiz.jpg',
     },
     {
       name: 'Anthony A. Nader',
@@ -150,7 +150,8 @@ class MembersGrid extends React.PureComponent {
       direction="column"
       alignItems="center"
       style={{
-        textTransform:'uppercase'
+        textTransform:'uppercase',
+        paddingBottom: '40px'
       }}
     >
     <Helmet>

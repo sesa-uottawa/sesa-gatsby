@@ -1,17 +1,19 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import MembersGrid from '../components/home/membersGrid'
 
 import '../components/home/home-container.css'
+import SponsorList from '../components/home/sponsorList';
 
 const IndexPage = () => (
   <>
     <Layout>
       <div class = "main-container">
         <div id = 'home-container-1'>
-          <img src= {require("../images/white-sesa-logo.png")}/>
+          <img 
+          src = {require("../images/white-sesa-logo.png")}
+          alt = 'SESA'/>
           <hr/>
           <div class = 'subtitle'>
             Software Engineering Student Association
@@ -36,8 +38,22 @@ const IndexPage = () => (
             SESA strives to enrich student life while building a networking platform in order to aid students in landing real world experiences.
           </p>
         </div>
-        <MembersGrid />
-      </div>
+        <div id = 'home-container-4'>
+          <MembersGrid />
+        </div>
+        <div id = 'home-container-5'>
+          <a href='https://www.facebook.com/UOttawaSESA/'>
+            <div class = 'title'>
+              Events
+            </div>
+            <hr/>
+            <div class = 'subtitle'>
+              Upcoming Events for the new school year!
+            </div>
+          </a>
+        </div>
+        <SponsorList/>
+        </div>
     </Layout>
   </>
 )
