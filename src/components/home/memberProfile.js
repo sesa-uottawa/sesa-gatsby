@@ -17,7 +17,7 @@ const MemberProfile = props => {
           width: '200px',
           margin: '10px auto 0 auto'
         }}
-        image={require('../images/currentMembers/' + file)}
+        image={require('../../images/currentMembers/' + file)}
         title={props.memberName}
       />
       <CardContent>

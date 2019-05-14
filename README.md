@@ -1,33 +1,28 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://sesa-uottawa.ca">
+    <img alt="SESA" src="src/images/black-sesa-logo.png" width="200" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  SESA Gatsby Site
 </h1>
-
-Kick off your project with this default boilerplate. This barebones starter ships with the main Gatsby configuration files you might need. 
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Clone the repo**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Clone the repo using Git.
 
     ```sh
-    # create a new Gatsby site using the default starter
-    npx gatsby new my-default-starter
+    git clone https://github.com/sesa-uottawa/sesa-gatsby.git
     ```
 
 1.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate into the site’s directory and start it up.
 
     ```sh
-    cd my-default-starter/
+    cd sesa-gatsby/
     gatsby develop
     ```
 

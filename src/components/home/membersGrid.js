@@ -26,7 +26,7 @@ class MembersGrid extends React.PureComponent {
       name: 'Faizaan Chishtie',
       title: 'VP Academic',
       tenure: '2018-Present',
-      photoFile: '',
+      photoFile: 'faiz.jpg',
     },
     {
       name: 'Anthony A. Nader',
@@ -80,7 +80,7 @@ class MembersGrid extends React.PureComponent {
       name: 'Ian Desson',
       title: 'Web Master',
       tenure: '2017-Present',
-      photoFile: '',
+      photoFile: 'ian.jpg',
     },
     {
       name: 'Timi Owoturo',
@@ -150,7 +150,8 @@ class MembersGrid extends React.PureComponent {
       direction="column"
       alignItems="center"
       style={{
-        textTransform:'uppercase'
+        textTransform:'uppercase',
+        paddingBottom: '40px'
       }}
     >
     <Helmet>
@@ -162,7 +163,8 @@ class MembersGrid extends React.PureComponent {
         variant="title"
         color="primary"
         style={{
-          fontSize:"3rem"
+          fontSize:"3rem",
+          paddingTop: '40px'
         }}
       >
         Awesome team of execs
