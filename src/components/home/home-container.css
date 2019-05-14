@@ -1,5 +1,5 @@
 #home-container-1 {
-  padding: 30vh 0 30vh 0;
+  padding: 30vh 0 30vh;
   background-image: url(../../images/schooltime_v3.png);
   background-size: cover;
   background-attachment: fixed;
@@ -41,9 +41,6 @@
 }
 #home-container-5 a {
   text-decoration: none;
-}
-#home-container-5 :hover {
-  transition: scale(1.5);
 }
 #home-container-6 {
   text-align: center;
