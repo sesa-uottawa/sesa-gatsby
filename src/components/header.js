@@ -16,28 +16,36 @@ import {
   Switch,
 } from "@blueprintjs/core";
 
-const styles = {
-  root: {
-    flexGrow: 1,
-  },
-};
+const Header = ({ siteTitle }) => {
+  const clickObject = {mission: 'OUR_MISSION', events: 'EVENTS', newsLetter: 'NEWS_LETTER'}
+  function handleClick(clickedButton) {
+    if (clickObject.mission === clickedButton){
+      document.getElementById('home-container-3').scrollIntoView();
+    } else if (clickObject.events === clickedButton){
+      document.getElementById('events').scrollIntoView();
+    } else if (clickObject.newsLetter === clickedButton){
+      //We need the newsletter page
+    }
+  }
+  return (
+    <Navbar>
+      <NavbarGroup align={Alignment.LEFT}>
+        <NavbarHeading>{siteTitle}</NavbarHeading>
+        <NavbarDivider />
+        <Button className={Classes.MINIMAL} text="OUR MISSION" onClick={() => handleClick(clickObject.mission)}/>
+        <Button className={Classes.MINIMAL} text="EVENTS" onClick={() => handleClick(clickObject.events)}/>
+        <Button className={Classes.MINIMAL} text="NEWS LETTER" onClick={() => handleClick(clickObject.newsLetter)} />
+      </NavbarGroup>
+    </Navbar>
+  )
+}
 
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+}
 
-
-const handleChange = event => {
-  this.setState({ [event.target.name]: event.target.value });
-};
-
-const Header = ({ siteTitle }) => (
-  <Navbar>
-    <NavbarGroup align={Alignment.LEFT}>
-      <NavbarHeading>SESA</NavbarHeading>
-      <NavbarDivider />
-      <Button className={Classes.MINIMAL} text="OUR MISSION" />
-      <Button className={Classes.MINIMAL} text="EVENTS" />
-      <Button className={Classes.MINIMAL} text="NEWS LETTER" />
-    </NavbarGroup>
-  </Navbar>
-)
+Header.defaultProps = {
+  siteTitle: ``,
+}
 export default Header
 
