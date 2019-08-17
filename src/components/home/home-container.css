@@ -1,0 +1,47 @@
+#home-container-1 {
+  padding: 30vh 0 30vh;
+  background-image: url(../../images/schooltime_v3.png);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+#home-container-2 {
+  color: #990012;
+  text-align: center;
+  font-size: 1.75rem;
+  padding: 10vh 0 10vh;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+#home-container-3 {
+  background-image: url(../../images/traintrack.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 25vh 0 25vh;
+  color: #fff;
+}
+#home-container-3 p {
+  max-width: 50rem;
+  margin: 0 auto;
+  font: 300 1.2em 'Raleway', sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+#home-container-5 {
+  background-image: url(../../images/openwater.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10vh 0 10vh;
+  font: 300 1.2em 'Raleway', sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+#home-container-5 a {
+  text-decoration: none;
+}
+#home-container-6 {
+  text-align: center;
+}
