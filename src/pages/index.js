@@ -47,7 +47,7 @@ const IndexPage = () => (
               Events
             </div>
             <hr/>
-            <div class = 'subtitle'>
+            <div class = 'subtitle' id="events">
               Upcoming Events for the new school year!
             </div>
           </a>
