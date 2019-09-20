@@ -28,7 +28,7 @@ const IndexPage = () => (
           <br/>
           Hustle > Role Definition
         </div>
-        <div id = 'home-container-3'>
+        <div id = 'mission'>
           <div class = 'title'>
             Our Mission
           </div>

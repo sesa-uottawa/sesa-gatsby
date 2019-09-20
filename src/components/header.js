@@ -1,8 +1,7 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import '@blueprintjs/core/lib/css/blueprint.css'
+import '@blueprintjs/core/lib/css/blueprint.css';
 
 import {
   Alignment,
@@ -14,38 +13,43 @@ import {
   NavbarGroup,
   NavbarHeading,
   Switch,
-} from "@blueprintjs/core";
+} from '@blueprintjs/core';
 
 const Header = ({ siteTitle }) => {
-  const clickObject = {mission: 'OUR_MISSION', events: 'EVENTS', newsLetter: 'NEWS_LETTER'}
-  function handleClick(clickedButton) {
-    if (clickObject.mission === clickedButton){
-      document.getElementById('home-container-3').scrollIntoView();
-    } else if (clickObject.events === clickedButton){
-      document.getElementById('events').scrollIntoView();
-    } else if (clickObject.newsLetter === clickedButton){
-      //We need the newsletter page
-    }
-  }
+  const clickObject = {
+    mission: 'OUR_MISSION',
+    events: 'EVENTS',
+    newsLetter: 'NEWS_LETTER',
+  };
+
   return (
-    <Navbar>
+    <Navbar fixedToTop>
       <NavbarGroup align={Alignment.LEFT}>
-        <NavbarHeading>{siteTitle}</NavbarHeading>
+        <NavbarHeading>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <Button className={Classes.MINIMAL} text={siteTitle} />
+          </Link>
+        </NavbarHeading>
         <NavbarDivider />
-        <Button className={Classes.MINIMAL} text="OUR MISSION" onClick={() => handleClick(clickObject.mission)}/>
-        <Button className={Classes.MINIMAL} text="EVENTS" onClick={() => handleClick(clickObject.events)}/>
-        <Button className={Classes.MINIMAL} text="NEWS LETTER" onClick={() => handleClick(clickObject.newsLetter)} />
+        <Link to="/#home-container-3" style={{ textDecoration: 'none' }}>
+          <Button className={Classes.MINIMAL} text="OUR MISSION" />
+        </Link>
+        <Link to="/#events" style={{ textDecoration: 'none' }}>
+          <Button className={Classes.MINIMAL} text="EVENTS" />
+        </Link>
+        <Link to="/newsletter" style={{ textDecoration: 'none' }}>
+          <Button className={Classes.MINIMAL} text="NEWS LETTER" />
+        </Link>
       </NavbarGroup>
     </Navbar>
-  )
-}
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
-export default Header
-
+};
+export default Header;

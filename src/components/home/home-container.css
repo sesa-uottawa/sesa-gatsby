@@ -13,7 +13,7 @@
   letter-spacing: 4px;
   text-transform: uppercase;
 }
-#home-container-3 {
+#mission {
   background-image: url(../../images/traintrack.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -21,7 +21,7 @@
   padding: 25vh 0 25vh;
   color: #fff;
 }
-#home-container-3 p {
+#mission p {
   max-width: 50rem;
   margin: 0 auto;
   font: 300 1.2em 'Raleway', sans-serif;
