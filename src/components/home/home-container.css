@@ -1,6 +1,6 @@
 #home-container-1 {
   padding: 30vh 0 30vh;
-  background-image: url(../../images/schooltime_v3.png);
+  background-image: url(../../resources/images/schooltime_v3.png);
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -14,7 +14,7 @@
   text-transform: uppercase;
 }
 #mission {
-  background-image: url(../../images/traintrack.jpg);
+  background-image: url(../../resources/images/traintrack.jpg);
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -30,7 +30,7 @@
   text-rendering: optimizeLegibility;
 }
 #home-container-5 {
-  background-image: url(../../images/openwater.jpg);
+  background-image: url(../../resources/images/openwater.jpg);
   background-size: cover;
   background-attachment: fixed;
   padding: 10vh 0 10vh;

@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://sesa-uottawa.ca">
-    <img alt="SESA" src="src/images/black-sesa-logo.png" width="200" />
+    <img alt="SESA" src="src/resources/images/black-sesa-logo.png" width="200" />
   </a>
 </p>
 <h1 align="center">
