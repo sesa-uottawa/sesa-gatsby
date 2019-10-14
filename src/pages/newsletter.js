@@ -3,7 +3,6 @@ import React from 'react';
 import { Typography, TextField, Button, Grid } from '@material-ui/core/';
 
 import Layout from '../components/layout';
-import '../components/layout.css';
 
 class Newsletter extends React.Component {
   constructor(props) {
@@ -37,9 +36,8 @@ class Newsletter extends React.Component {
         'Thank you for joining the SESA NewsLetter!\n You should receive an email to confirm!'
       );
     } else {
-      
     }
-    console.log(this.state.formErrors)
+    console.log(this.state.formErrors);
   }
 
   validateForm() {
@@ -110,11 +108,20 @@ class Newsletter extends React.Component {
       marginTop: '2em',
     };
 
+    const labels = {
+      'First Name': 'firstName',
+      'Last Name': 'lastName',
+      Email: 'email',
+    };
+
     return (
       <Layout>
         <Typography
           variant="h3"
-          style={{ textAlign: 'center', marginTop: '4rem' }}
+          style={{
+            textAlign: 'center',
+            marginTop: '4rem',
+          }}
           color="secondary"
         >
           Sign Up for our Newsletter!
@@ -127,30 +134,17 @@ class Newsletter extends React.Component {
             alignItems="center"
             style={formContainerStyle}
           >
-            <TextField
-              label="First Name"
-              name="firstName"
-              variant="outlined"
-              style={formItemStyle}
-              onChange={this.handleChange}
-              error={this.state.firstNameError}
-            />
-            <TextField
-              label="Last Name"
-              name="lastName"
-              variant="outlined"
-              style={formItemStyle}
-              onChange={this.handleChange}
-              error={this.state.lastNameError}
-            />
-            <TextField
-              label="Email"
-              name="email"
-              variant="outlined"
-              style={formItemStyle}
-              onChange={this.handleChange}
-              error={this.state.emailError}
-            />
+            {Object.keys(labels).map((key, index) => {
+              return (
+                <TextField
+                  label={key}
+                  name={labels[key]}
+                  style={formItemStyle}
+                  onChange={this.handleChange}
+                  error={this.state.firstNameError}
+                />
+              );
+            })}
             <Button
               variant="contained"
               type="submit"
