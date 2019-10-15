@@ -12,7 +12,7 @@ const IndexPage = () => (
       <div class = "main-container">
         <div id = 'home-container-1'>
           <img 
-          src = {require("../images/white-sesa-logo.png")}
+          src = {require("../resources/images/white-sesa-logo.png")}
           alt = 'SESA'/>
           <hr/>
           <div class = 'subtitle'>
