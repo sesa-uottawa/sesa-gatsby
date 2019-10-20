@@ -43,11 +43,11 @@ class SponsorList extends React.PureComponent {
             spacing={24}
           >
             <Grid item xs={12} sm={6} lg={4}>
-              <img src={require('../../images/genatec.png')} alt="Genatec" />
+              <img src={require('../../resources/images/genatec.png')} alt="Genatec" />
             </Grid>
             <Grid item xs={12} sm={6} lg={4}>
               <img
-                src={require('../../images/desjardins.png')}
+                src={require('../../resources/images/desjardins.png')}
                 alt="Desjardins"
               />
             </Grid>
