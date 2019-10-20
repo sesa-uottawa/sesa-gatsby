@@ -124,7 +124,7 @@ class Newsletter extends React.Component {
         >
           Sign Up for our Newsletter!
         </Typography>
-        <form onSubmit={this.handleSubmit} name="Newsletter Form" data-netlify="true" action="/">
+        <form name="Newsletter Form" data-netlify="true" action="/">
           <input type="hidden" name="form-name" value="Newsletter Form" />
           <Grid
             container
