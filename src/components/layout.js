@@ -3,8 +3,31 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
+import createTypography from '@material-ui/core/styles/createTypography';
+import createPalette from '@material-ui/core/styles/createPalette';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
+
 import Header from './header';
-import './layout.css';
+import '../resources/styles/layout.css';
+
+const palette = createPalette ({
+  primary: {
+    main:"#990012"
+  },
+  secondary: {
+    main: '#545454',
+    light:'#cacaca'
+  }
+});
+
+const typography = createTypography(palette, {
+  fontFamily: 'Raleway'
+});
+
+const theme = createMuiTheme({
+  palette: palette,
+  typography: typography
+});
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -29,7 +52,9 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={'SESA'} />
+        <MuiThemeProvider theme={theme}>
         {children}
+        </MuiThemeProvider>
       </>
     )}
   />
