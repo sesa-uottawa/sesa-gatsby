@@ -32,10 +32,8 @@ class Newsletter extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     if (this.validateForm()) {
-      alert(
-        'Thank you for joining the SESA NewsLetter!\n You should receive an email to confirm!'
-      );
-    } else {
+      // TODO: Need to connect to MailChimp or use Netlify forms for signup
+      alert('Thank you for joining the SESA NewsLetter!\n');
     }
     console.log(this.state.formErrors);
   }
@@ -122,11 +120,11 @@ class Newsletter extends React.Component {
             textAlign: 'center',
             marginTop: '4rem',
           }}
-          color="secondary"
+          color="primary"
         >
           Sign Up for our Newsletter!
         </Typography>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={() => this.handleSubmit} data-netlify="true">
           <Grid
             container
             direction="column"
