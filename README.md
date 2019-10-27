@@ -13,12 +13,14 @@
     ```https://www.gatsbyjs.org/tutorial/part-zero/```
 
 1. It is recommended to use VSCode with the Prettier extension:
-    [**VSCode:**](https://code.visualstudio.com/download)
 
-    [**Prettier:**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+    [**VSCode**](https://code.visualstudio.com/download)
+
+    [**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
     (Or just search in the Extensions tab in VSCode)
 
 1. We Follow the Standard [GitHub Workflow](https://guides.github.com/introduction/flow/)
+
     This means you should create a branch or fork and open a Pull Request before merging to master
 
 
@@ -98,7 +100,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 ### Gatsby
 
-Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+Full documentation for Gatsby lives [on their website](https://www.gatsbyjs.org/). Here are some places to start:
 
 -   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
