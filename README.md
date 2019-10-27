@@ -7,7 +7,22 @@
   SESA Gatsby Site
 </h1>
 
-## 🚀 Quick start
+## Before You Begin
+
+1. Follow the setup instructions found here:
+    ```https://www.gatsbyjs.org/tutorial/part-zero/```
+
+1. It is recommended to use VSCode with the Prettier extension:
+    [**VSCode:**](https://code.visualstudio.com/download)
+
+    [**Prettier:**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+    (Or just search in the Extensions tab in VSCode)
+
+1. We Follow the Standard [GitHub Workflow](https://guides.github.com/introduction/flow/)
+    This means you should create a branch or fork and open a Pull Request before merging to master
+
+
+## 🚀 Running Locally:
 
 1.  **Clone the repo**
 
@@ -79,14 +94,38 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
   
   13.  **`yarn.lock`**: [Yarn](https://yarnpkg.com/) is a package manager alternative to npm. You can use either yarn or npm, though all of the Gatsby docs reference npm.  This file serves essentially the same purpose as `package-lock.json`, just for a different package management system.
 
-## 🎓 Learning Gatsby
+## 🎓 Learn More About the Tools We Use
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+### Gatsby
+
+Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
 
 -   **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 -   **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
+### React
+
+React offers a [tutorial](https://reactjs.org/tutorial/tutorial.html) to **learn by doing**
+
+Or, if you learn concepts **step-by-step** you can read their [guide to concepts](https://reactjs.org/docs/hello-world.html)
+
+### Git
+
+GitHub offers [many different tutorials](https://try.github.io/) for learning Git and Version Control
+
+### Javascript, HTML and CSS
+
+W3schools gives simple explanations for various parts of [JS](https://www.w3schools.com/js/default.asp), [HTML](https://www.w3schools.com/html/) and [CSS](https://www.w3schools.com/css/default.asp)
+
+There are also many other free tutorials and courses online such as [The Odin Project](https://www.theodinproject.com/) or [Codeacademy](https://www.codecademy.com/)
+
 ## 💫 Deployment Status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b0542013-46cc-41e6-8d6b-cb0405bed5e5/deploy-status)](https://app.netlify.com/sites/serene-elion-03261a/deploys)
+
+## Maintained By
+
+[**Everyone**](https://github.com/sesa-uottawa/sesa-gatsby/graphs/contributors)
+
+See an error? Feel free to submit a pull request, open up an issue, or post on our [facebook page](https://www.facebook.com/groups/uOttawaSESA/).

@@ -5,28 +5,28 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import createTypography from '@material-ui/core/styles/createTypography';
 import createPalette from '@material-ui/core/styles/createPalette';
-import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 
 import Header from './header';
 import '../resources/styles/layout.css';
 
-const palette = createPalette ({
+const palette = createPalette({
   primary: {
-    main:"#990012"
+    main: '#990012',
   },
   secondary: {
     main: '#545454',
-    light:'#cacaca'
-  }
+    light: '#cacaca',
+  },
 });
 
 const typography = createTypography(palette, {
-  fontFamily: 'Raleway'
+  fontFamily: 'Raleway',
 });
 
 const theme = createMuiTheme({
   palette: palette,
-  typography: typography
+  typography: typography,
 });
 
 const Layout = ({ children }) => (
@@ -52,9 +52,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={'SESA'} />
-        <MuiThemeProvider theme={theme}>
-        {children}
-        </MuiThemeProvider>
+        <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>
       </>
     )}
   />
