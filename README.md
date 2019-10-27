@@ -17,7 +17,7 @@
     [**VSCode**](https://code.visualstudio.com/download)
 
     [**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-    (Or just search in the Extensions tab in VSCode)
+    (Or search in the Extensions tab in VSCode)
 
 1. We Follow the Standard [GitHub Workflow](https://guides.github.com/introduction/flow/)
 
