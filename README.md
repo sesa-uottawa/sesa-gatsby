@@ -7,7 +7,22 @@
   SESA Gatsby Site
 </h1>
 
-## 🚀 Quick start
+## Before You Begin
+
+1. Follow the setup instructions found here:
+    ```https://www.gatsbyjs.org/tutorial/part-zero/```
+
+1. It is recommended to use VSCode with the Prettier extension:
+    [**VSCode:**](https://code.visualstudio.com/download)
+
+    [**Prettier:**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+    (Or just search in the Extensions tab in VSCode)
+
+1. We Follow the Standard [GitHub Workflow](https://guides.github.com/introduction/flow/)
+    This means you should create a branch or fork and open a Pull Request before merging to master
+
+
+## 🚀 Running Locally:
 
 1.  **Clone the repo**
 
@@ -90,3 +105,9 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## 💫 Deployment Status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b0542013-46cc-41e6-8d6b-cb0405bed5e5/deploy-status)](https://app.netlify.com/sites/serene-elion-03261a/deploys)
+
+## Maintained By
+
+[**Everyone**](https://github.com/sesa-uottawa/sesa-gatsby/graphs/contributors)
+
+See an error? Feel free to submit a pull request, open up an issue, or post on our [facebook page](https://www.facebook.com/groups/uOttawaSESA/).
