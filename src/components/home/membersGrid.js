@@ -82,10 +82,10 @@ class MembersGrid extends React.PureComponent {
       photoFile: 'ian.jpg',
     },
     {
-      name: 'Timi Owoturo',
-      title: 'Web Director',
-      tenure: '2018-Present',
-      photoFile: '',
+      name: 'Daniel Shwan',
+      title: 'Web Developer',
+      tenure: '2019-Present',
+      photoFile: 'dshwan.jpg',
     },
     {
       name: 'Owen Anderson',
