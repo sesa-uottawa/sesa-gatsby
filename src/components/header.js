@@ -25,12 +25,19 @@ const Header = ({ siteTitle }) => {
   return (
     <Navbar fixedToTop>
       <NavbarGroup align={Alignment.LEFT}>
-        <NavbarHeading>
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <Button className={Classes.MINIMAL} text={siteTitle} />
-          </Link>
-        </NavbarHeading>
-        <NavbarDivider />
+
+        <div className={"container"}>
+          <div className={"header-poly"} >
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              <img
+                className={"header-poly-logo"}
+                src={require('../resources/images/black-sesa-logo-simple.png')}
+                alt="SESA"
+              />
+            </Link>
+          </div>
+        </div>
+
         <Link to="/#home-container-3" style={{ textDecoration: 'none' }}>
           <Button className={Classes.MINIMAL} text="OUR MISSION" />
         </Link>
@@ -43,7 +50,9 @@ const Header = ({ siteTitle }) => {
       </NavbarGroup>
     </Navbar>
   );
+
 };
+
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

@@ -93,6 +93,12 @@ class MembersGrid extends React.PureComponent {
       tenure: '2019-Present',
       photoFile: 'default-female-photo.jpg',
     },
+    {
+      name: 'Mark-Olivier Poulin',
+      title: 'Web Developer',
+      tenure: '2019-Present',
+      photoFile: '',
+    },
   ];
 
   memberProfileGenerator = (startIndex, endIndex) =>
