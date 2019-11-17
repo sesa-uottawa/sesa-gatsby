@@ -33,7 +33,9 @@ class Newsletter extends React.Component {
     event.preventDefault();
     if (this.validateForm()) {
       // TODO: Need to connect to MailChimp or use Netlify forms for signup
-      alert('Thank you for joining the SESA NewsLetter!\n');
+      if(!alert('Thank you for joining the SESA NewsLetter!\n')) {
+        window.location.href = "/";
+      };
     }
     console.log(this.state.formErrors);
   }
@@ -45,27 +47,11 @@ class Newsletter extends React.Component {
     let lastName = this.state.lastName;
     let email = this.state.email;
 
-    // Check if fields are empty
     if (firstName === '') {
       errors['firstName'] = 'First Name cannot be empty';
       formIsValid = false;
       this.setState({ firstNameError: true });
-    }
-
-    if (lastName === '') {
-      errors['lastName'] = 'Last Name cannot be empty';
-      formIsValid = false;
-      this.setState({ lastNameError: true });
-    }
-
-    if (email === '') {
-      errors['email'] = 'Email cannot be empty';
-      formIsValid = false;
-      this.setState({ emailError: true });
-    }
-
-    // Verify Names contain letters
-    if (typeof firstName !== undefined) {
+    } else if (typeof firstName !== undefined) {
       if (!firstName.match(/^[a-zA-Z]+$/)) {
         errors['firstName'] = 'First Name can only contain letters';
         formIsValid = false;
@@ -73,7 +59,11 @@ class Newsletter extends React.Component {
       }
     }
 
-    if (typeof lastName !== undefined) {
+    if (lastName === '') {
+      errors['lastName'] = 'Last Name cannot be empty';
+      formIsValid = false;
+      this.setState({ lastNameError: true });
+    } else if (typeof lastName !== undefined) {
       if (!lastName.match(/^[a-zA-Z]+$/)) {
         errors['lastName'] = 'Last Name can only contain letters';
         formIsValid = false;
@@ -81,8 +71,11 @@ class Newsletter extends React.Component {
       }
     }
 
-    // Verify email formatting (ex: string@string.string)
-    if (typeof email !== undefined) {
+    if (email === '') {
+      errors['email'] = 'Email cannot be empty';
+      formIsValid = false;
+      this.setState({ emailError: true });
+    } else if (typeof email !== undefined) {
       if (!email.match(/\S+@\S+\.\S+/)) {
         errors['email'] = 'Invalid Email Format';
         formIsValid = false;
@@ -124,7 +117,7 @@ class Newsletter extends React.Component {
         >
           Sign Up for our Newsletter!
         </Typography>
-        <form name="Newsletter Form" data-netlify="true" action="/">
+        <form name="Newsletter Form" data-netlify="true" onSubmit={this.handleSubmit}>
           <input type="hidden" name="form-name" value="Newsletter Form" />
           <Grid
             container
@@ -137,10 +130,12 @@ class Newsletter extends React.Component {
               return (
                 <TextField
                   label={key}
+                  key={key}
                   name={labels[key]}
                   style={formItemStyle}
                   onChange={this.handleChange}
-                  error={this.state.firstNameError}
+                  error={this.state.formErrors[labels[key]]}
+                  helperText={this.state.formErrors[labels[key]]}
                 />
               );
             })}
