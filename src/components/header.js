@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => {
           </Link>
         </NavbarHeading>
         <NavbarDivider />
-        <Link to="/#mission" style={{ textDecoration: 'none' }}>
+        <Link to="/#home-container-3" style={{ textDecoration: 'none' }}>
           <Button className={Classes.MINIMAL} text="OUR MISSION" />
         </Link>
         <Link to="/#events" style={{ textDecoration: 'none' }}>
