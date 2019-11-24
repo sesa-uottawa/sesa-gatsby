@@ -10,16 +10,16 @@ import Helmet from 'react-helmet';
 class MembersGrid extends React.PureComponent {
   currentMembers = [
     {
-      name: 'Anushka Paliwal',
-      title: 'President',
-      tenure: '2015-Present',
-      photoFile: 'default-female-photo.jpg',
-    },
-    {
       name: 'Tolu Olubode',
-      title: 'Vice President',
+      title: 'President',
       tenure: '2017-Present',
       photoFile: 'tolu.jpg',
+    },
+    {
+      name: 'Harsh Gupta',
+      title: 'Vice President',
+      tenure: '2018-Present',
+      photoFile: 'harsh.jpeg',
     },
     {
       name: 'Faizaan Chishtie',
@@ -28,58 +28,34 @@ class MembersGrid extends React.PureComponent {
       photoFile: 'faiz.jpg',
     },
     {
-      name: 'Anthony A. Nader',
-      title: 'VP Marketing',
-      tenure: '2016-Present',
-      photoFile: 'anthony.png',
-    },
-    {
-      name: 'Melody Habbouche',
-      title: 'VP Communication',
-      tenure: '2015-Present',
-      photoFile: 'default-female-photo.jpg',
-    },
-    {
-      name: 'Harsh Gupta',
+      name: 'Sanat Nayar',
       title: 'VP Events',
       tenure: '2018-Present',
-      photoFile: 'harsh.jpeg',
+      photoFile: '',
     },
     {
-      name: 'Amelie Khan',
-      title: 'VP Community Engagement',
+      name: 'Maulik Shah',
+      title: 'VP Events',
       tenure: '2017-Present',
+      photoFile: 'maulik.png',
+    },
+    {
+      name: 'Afrah Ali',
+      title: 'VP Design',
+      tenure: '2019-Present',
       photoFile: 'default-female-photo.jpg',
     },
     {
-      name: 'Munir Aljawahari',
-      title: 'Graphic Designer',
+      name: 'Ian Desson',
+      title: 'Web Lead',
       tenure: '2017-Present',
-      photoFile: 'munir.jpg',
+      photoFile: 'ian.jpg',
     },
     {
       name: 'Sagal Maxamud',
       title: 'Academic Coordinator',
       tenure: '2018-Present',
       photoFile: 'default-female-photo.jpg',
-    },
-    {
-      name: 'Maulik Shah',
-      title: 'Event Coordinator',
-      tenure: '2018-Present',
-      photoFile: 'maulik.png',
-    },
-    {
-      name: 'Sanat Nayar',
-      title: 'Event Coordinator',
-      tenure: '2018-Present',
-      photoFile: '',
-    },
-    {
-      name: 'Ian Desson',
-      title: 'Web Master',
-      tenure: '2017-Present',
-      photoFile: 'ian.jpg',
     },
     {
       name: 'Daniel Shwan',
@@ -90,6 +66,36 @@ class MembersGrid extends React.PureComponent {
     {
       name: 'Melissa Wu',
       title: 'Web Developer',
+      tenure: '2019-Present',
+      photoFile: 'default-female-photo.jpg',
+    },
+    {
+      name: 'Haran Jeyachandra',
+      title: 'Social Coordinator',
+      tenure: '2019-Present',
+      photoFile: '',
+    },
+    {
+      name: 'Luka David',
+      title: 'Socials Coordinator',
+      tenure: '2019-Present',
+      photoFile: '',
+    },
+    {
+      name: 'Bhalachandra Malghan',
+      title: 'Events Coordinator',
+      tenure: '2019-Present',
+      photoFile: '',
+    },
+    {
+      name: 'Hrithik Shah',
+      title: 'Events Coordinator',
+      tenure: '2019-Present',
+      photoFile: '',
+    },
+    {
+      name: 'Dharitri Dixit',
+      title: 'Events Coordinator',
       tenure: '2019-Present',
       photoFile: 'default-female-photo.jpg',
     },
