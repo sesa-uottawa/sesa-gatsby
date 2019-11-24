@@ -15,6 +15,7 @@ const MemberProfile = props => {
         style={{
           height: '200px',
           width: '200px',
+          borderRadius: '50%',
           margin: '10px auto 0 auto',
         }}
         image={require('../../resources/images/currentMembers/' + file)}
