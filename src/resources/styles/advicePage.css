@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+#banner {
+  background-attachment: fixed;
+  background-image: url('../images/books.jpg');
+  background-size: cover;
+  min-height: 480px;
+  height: 85vh;
+  position: relative;
+}
+#banner h1 {
+  font-family: inherit;
+  font-weight: 100;
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+}
