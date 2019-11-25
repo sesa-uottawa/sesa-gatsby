@@ -1,12 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
 import { CardMedia, CardContent } from '@material-ui/core';
 
-const MemberProfile = props => {
+const MemberProfile = ({
+  memberName,
+  memberTitle,
+  memberTenure,
+  photoFile,
+}) => {
   var file = 'default-male-photo.png';
-  if (props.photoFile) {
-    file = props.photoFile;
+  if (photoFile) {
+    file = photoFile;
   }
   return (
     <Card>
@@ -19,21 +26,32 @@ const MemberProfile = props => {
           margin: '10px auto 0 auto',
         }}
         image={require('../../resources/images/currentMembers/' + file)}
-        title={props.memberName}
+        title={memberName}
       />
       <CardContent>
         <Typography variant="subtitle1" align="center" color="primary">
-          {props.memberName}
+          {memberName}
         </Typography>
         <Typography align="center" color="secondary">
-          {props.memberTitle}
+          {memberTitle}
         </Typography>
         <Typography align="center" color="secondary">
-          {props.memberTenure}
+          {memberTenure}
         </Typography>
       </CardContent>
     </Card>
   );
+};
+
+MemberProfile.propTypes = {
+  /* Name of Member */
+  memberName: PropTypes.string.isRequired,
+  /* Their position/title in SESA */
+  memberTitle: PropTypes.string.isRequired,
+  /* How long they have been a part of SESA (format: Year-Year) */
+  memberTenure: PropTypes.string.isRequired,
+  /* Name of image file in resources/images/currentMembers that will be displayed*/
+  photoFile: PropTypes.string,
 };
 
 export default MemberProfile;

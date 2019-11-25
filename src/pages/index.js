@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import MembersGrid from '../components/home/membersGrid';
 
-import '../components/home/home-container.css';
+import '../resources/styles/home-container.css';
 import SponsorList from '../components/home/sponsorList';
 
 const IndexPage = () => (
