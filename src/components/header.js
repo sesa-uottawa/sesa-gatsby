@@ -3,16 +3,19 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import '@blueprintjs/core/lib/css/blueprint.css';
 
+
+// Icon Imports
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+
 import {
   Alignment,
   Button,
   Classes,
-  H5,
   Navbar,
   NavbarDivider,
   NavbarGroup,
   NavbarHeading,
-  Switch,
 } from '@blueprintjs/core';
 
 const Header = ({ siteTitle }) => {
@@ -37,8 +40,20 @@ const Header = ({ siteTitle }) => {
         <Link to="/#events" style={{ textDecoration: 'none' }}>
           <Button className={Classes.MINIMAL} text="EVENTS" />
         </Link>
-        <Link to="/newsletter" style={{ textDecoration: 'none' }}>
+        {/* <Link to="/newsletter" style={{ textDecoration: 'none' }}>
           <Button className={Classes.MINIMAL} text="NEWS LETTER" />
+        </Link> */}
+      </NavbarGroup>
+      <NavbarGroup align={Alignment.RIGHT}>
+        <Link to="https://www.facebook.com/UOttawaSESA/" style={{ textDecoration: 'none' }}>
+          <Button className={Classes.MINIMAL}>
+            <FacebookIcon />
+          </Button>
+        </Link>
+        <Link to="https://www.instagram.com/uottawasesa/" style={{ textDecoration: 'none' }}>
+          <Button className={Classes.MINIMAL}>
+            <InstagramIcon />
+          </Button>
         </Link>
       </NavbarGroup>
     </Navbar>
