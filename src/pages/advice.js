@@ -10,6 +10,7 @@ const AdvicePage = () => (
   <Layout>
     <div id="banner">
       <h1>FIRST YEAR TIPS</h1>
+      <h2>Course advice</h2>
     </div>
     <EnrolmentAdvice />
   </Layout>
