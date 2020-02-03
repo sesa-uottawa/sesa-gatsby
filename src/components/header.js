@@ -45,16 +45,16 @@ const Header = ({ siteTitle }) => {
         </Link> */}
       </NavbarGroup>
       <NavbarGroup align={Alignment.RIGHT}>
-        <Link to="https://www.facebook.com/UOttawaSESA/" style={{ textDecoration: 'none' }}>
+        <a href="https://www.facebook.com/UOttawaSESA/" style={{ textDecoration: 'none' }}>
           <Button className={Classes.MINIMAL}>
             <FacebookIcon />
           </Button>
-        </Link>
-        <Link to="https://www.instagram.com/uottawasesa/" style={{ textDecoration: 'none' }}>
+        </a>
+        <a href="https://www.instagram.com/uottawasesa/" style={{ textDecoration: 'none' }}>
           <Button className={Classes.MINIMAL}>
             <InstagramIcon />
           </Button>
-        </Link>
+        </a>
       </NavbarGroup>
     </Navbar>
   );
