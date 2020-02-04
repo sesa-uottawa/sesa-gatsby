@@ -20,6 +20,7 @@ const Header = ({ siteTitle }) => {
     mission: 'OUR_MISSION',
     events: 'EVENTS',
     newsLetter: 'NEWS_LETTER',
+    advice: 'FIRST_YEAR_TIPS'
   };
 
   return (
@@ -36,6 +37,9 @@ const Header = ({ siteTitle }) => {
         </Link>
         <Link to="/#events" style={{ textDecoration: 'none' }}>
           <Button className={Classes.MINIMAL} text="EVENTS" />
+        </Link>
+        <Link to="/advice" style={{ textDecoration: 'none' }}>
+          <Button className={Classes.MINIMAL} text="FIRST YEAR TIPS" />
         </Link>
         <Link to="/newsletter" style={{ textDecoration: 'none' }}>
           <Button className={Classes.MINIMAL} text="NEWS LETTER" />
