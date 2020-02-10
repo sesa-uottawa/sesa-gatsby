@@ -1,6 +1,7 @@
 #enrolment-advice {
   max-width: 70rem;
   margin: 0 auto;
+  padding: 1rem 0 1rem 0;
 }
 
 #enrolment-title {
@@ -9,7 +10,6 @@
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 2rem;
   text-align: center;
-  padding-top: 1rem;
   font-weight: normal;
 }
 
@@ -33,6 +33,7 @@
   border: 1px solid #aaa;
   margin-top: 1em;
   cursor: pointer;
+  transition: all .2s ease-in;
 }
 .advice-title:hover {
   color: #7bc8a4;
