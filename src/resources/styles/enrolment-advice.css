@@ -37,6 +37,7 @@
 }
 .advice-title:hover {
   color: #7bc8a4;
+  border-color: #7bc8a4;
 }
 .advice-title.selected {
   background-color: #7bc8a4;
