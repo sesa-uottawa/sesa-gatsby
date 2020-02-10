@@ -25,45 +25,45 @@ const adviceText = [
   {
     title: 'Choosing Sections',
     body: `
-    Some courses, especially 1000 and 2000 level, will have more than one section.
-    Some may have more than one lab or tutorial.
-    You may choose whichever section fits your schedule best or whichever section has a
-    <a target="_blank" href="https://www.ratemyprofessors.com/campusRatings.jsp?sid=1452">recommended prof</a>.
-    It is unwise to choose your schedule based on rooms or buildings, those are subject to change (even once the semester starts).
-    Always remember it is possible to change sections or courses in the first few weeks.
-    Deadlines can be found on the
-    <a target="_blank" href="https://www.uottawa.ca/important-academic-dates-and-deadlines/">uottawa dates and deadlines page</a>.
-    Keep track of these dates if you think you'll be changing your schedule.
+      Some courses, especially 1000 and 2000 level, will have more than one section.
+      Some may have more than one lab or tutorial.
+      You may choose whichever section fits your schedule best or whichever section has a
+      <a target="_blank" href="https://www.ratemyprofessors.com/campusRatings.jsp?sid=1452">recommended prof</a>.
+      It is unwise to choose your schedule based on rooms or buildings, those are subject to change (even once the semester starts).
+      Always remember it is possible to change sections or courses in the first few weeks.
+      Deadlines can be found on the
+      <a target="_blank" href="https://www.uottawa.ca/important-academic-dates-and-deadlines/">uottawa dates and deadlines page</a>.
+      Keep track of these dates if you think you'll be changing your schedule.
     `,
   },
   {
     title: 'Planning your Schedule',
     body: `
-    You can view the
-    <a target="_blank" href="https://www.uottawa.ca/course-timetable/">timetables</a>
-    for all offered courses usually a month before enrollment.
-    Using scheduling tools such as
-    <a target="_blank" href="https://digized.github.io/schedule-generator/">Schedule Generator</a>
-    you can plan different versions of schedules based on sections offered and courses you may want to take.
-    Once the schedule is released you are able to add courses to your shopping cart in enrol.
-    You cannot yet register but if you have the courses and sections in your shopping cart,
-    the registration takes 2 minutes, logging on and simply registering in all the courses in your cart.
-    <br/>
-    <span>BE CAREFUL</span>! Classes fill up fast! To guarantee a spot you need to register right away.
+      You can view the
+      <a target="_blank" href="https://www.uottawa.ca/course-timetable/">timetables</a>
+      for all offered courses usually a month before enrollment.
+      Using scheduling tools such as
+      <a target="_blank" href="https://digized.github.io/schedule-generator/">Schedule Generator</a>
+      you can plan different versions of schedules based on sections offered and courses you may want to take.
+      Once the schedule is released you are able to add courses to your shopping cart in enrol.
+      You cannot yet register but if you have the courses and sections in your shopping cart,
+      the registration takes 2 minutes, logging on and simply registering in all the courses in your cart.
+      <br/>
+      <span>BE CAREFUL</span>! Classes fill up fast! To guarantee a spot you need to register right away.
     `,
   },
   {
     title: 'My mandatory class is full!',
     body: `
-    First add yourself to the waitlist.
-    Then email your
-    <a target="_blank" href="https://engineering.uottawa.ca/undergraduate-studies-office">academic advisor</a>
-    or the prof to find out next steps.
-    Sometimes they have the ability to register you in your course.
-    The wait list allows the advisors to change rooms to allow more students
-    or open up more sections so stay vigilant and keep in contact with the prof or advisor.
-    If you don't get into the class talk to your academic advisor about what courses they recommend you take in the place of the mandatory one.
-    As a last resort you can also take the equivalent course at Carleton if you don't want to fall behind.
+      First add yourself to the waitlist.
+      Then email your
+      <a target="_blank" href="https://engineering.uottawa.ca/undergraduate-studies-office">academic advisor</a>
+      or the prof to find out next steps.
+      Sometimes they have the ability to register you in your course.
+      The wait list allows the advisors to change rooms to allow more students
+      or open up more sections so stay vigilant and keep in contact with the prof or advisor.
+      If you don't get into the class talk to your academic advisor about what courses they recommend you take in the place of the mandatory one.
+      As a last resort you can also take the equivalent course at Carleton if you don't want to fall behind.
     `,
   },
 ];
