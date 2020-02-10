@@ -35,8 +35,8 @@ const Layout = ({ children }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            title,
-            description,
+            title
+            description
             keywords
           }
         }
@@ -47,10 +47,17 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: data.site.siteMetadata.description },
+            {
+              name: 'description',
+              content: data.site.siteMetadata.description,
+            },
             { name: 'keywords', content: data.site.siteMetadata.keywords },
           ]}
         >
+          <link
+            href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+            rel="stylesheet"
+          ></link>
           <html lang="en" />
         </Helmet>
         <Header siteTitle={'SESA'} />
