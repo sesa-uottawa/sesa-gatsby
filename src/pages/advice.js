@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-
+import CourseAdvice from '../components/courseAdvice'
 import EnrolmentAdvice from '../components/enrolmentAdvice';
 
 // CSS Imports
@@ -11,12 +11,8 @@ const AdvicePage = () => (
     <div id="banner">
       <h1>FIRST YEAR TIPS</h1>
     </div>
-    <div id="course-advice">
-      <h2>COURSE ADVICE</h2>
-      <div id="container">
-      </div>
-    </div>
     <EnrolmentAdvice />
+    <CourseAdvice />
   </Layout>
 );
 

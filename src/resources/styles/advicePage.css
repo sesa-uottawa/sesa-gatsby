@@ -18,9 +18,3 @@
   position: absolute;
   top: 50%;
 }
-#course-advice{
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
