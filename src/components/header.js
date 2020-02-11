@@ -38,9 +38,6 @@ const Header = ({ siteTitle }) => {
         <Link to="/#events" style={{ textDecoration: 'none' }}>
           <Button className={Classes.MINIMAL} text="EVENTS" />
         </Link>
-        <Link to="/advice" style={{ textDecoration: 'none' }}>
-          <Button className={Classes.MINIMAL} text="FIRST YEAR TIPS" />
-        </Link>
         <Link to="/newsletter" style={{ textDecoration: 'none' }}>
           <Button className={Classes.MINIMAL} text="NEWS LETTER" />
         </Link>
