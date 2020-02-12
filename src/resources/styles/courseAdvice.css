@@ -1,9 +1,18 @@
-#course-advice h2{
+#courseAdvice {
+   color: #3c763d;
    text-align: center;
-   font-family: inherit;
-   font-size: 2.5rem;
-   letter-spacing: 0.2em;
- }
- Grid{
-   background-color: aqua;
- }
+   font-family: Raleway, Arial, Helvetica, sans-serif;
+   font-size: 2rem;
+   font-weight: normal;
+}
+
+#courseSelection {
+   width: 50rem;
+   margin: 0 auto;
+}
+
+.Paper:hover {
+   background: whitesmoke;
+   color: #ffa000;
+   transform: scale(1.05)
+}
