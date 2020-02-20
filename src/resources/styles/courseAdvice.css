@@ -1,18 +1,15 @@
-#courseAdvice {
-   color: #3c763d;
+#courseAdvice{
    text-align: center;
-   font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+#courseAdvice h1{
+   color: #ff1744;
+   font-family: inherit;
    font-size: 2rem;
    font-weight: normal;
 }
 
-#courseSelection {
-   width: 50rem;
-   margin: 0 auto;
-}
-
-.Paper:hover {
-   background: whitesmoke;
-   color: #ffa000;
+.button:hover {
+   color: #3f51b5;
    transform: scale(1.05)
 }
