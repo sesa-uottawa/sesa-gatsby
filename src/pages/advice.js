@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-import CourseAdvice from '../components/courseAdvice'
+import CourseAdvice from '../components/CourseAdvice'
 import '../resources/styles/advicePage.css';
 
 const AdvicePage = () => (
