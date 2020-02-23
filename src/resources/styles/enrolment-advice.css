@@ -15,7 +15,6 @@
 
 .advice-select {
   max-width: 50%;
-  float: left;
 }
 .advice-body {
   max-width: 50%;
@@ -23,7 +22,6 @@
   line-height: 1.5;
   font-size: 1.1rem;
   padding: 15px;
-  float: right;
 }
 .advice-body span {
   color: #990012;
@@ -54,4 +52,10 @@
   padding: 15px;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: normal;
+}
+
+.advice-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

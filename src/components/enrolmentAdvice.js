@@ -74,25 +74,29 @@ const EnrolmentAdvice = () => {
   return (
     <div id="enrolment-advice">
       <h1 id="enrolment-title">Enrolment Advice</h1>
-      <div class="advice-select">
-        {adviceText.map((advice, index) => {
-          return (
-            <div
-              class={
-                'advice-title' +
-                (index === selectedTextIndex ? ' selected' : '')
-              }
-              onClick={() => setSelectedTextIndex(index)}
-            >
-              <h2>{advice.title}</h2>
-            </div>
-          );
-        })}
+      <div class="advice-content">
+        <div class="advice-select">
+          {adviceText.map((advice, index) => {
+            return (
+              <div
+                class={
+                  'advice-title' +
+                  (index === selectedTextIndex ? ' selected' : '')
+                }
+                onClick={() => setSelectedTextIndex(index)}
+              >
+                <h2>{advice.title}</h2>
+              </div>
+            );
+          })}
+        </div>
+        <div
+          class="advice-body"
+          dangerouslySetInnerHTML={{
+            __html: adviceText[selectedTextIndex].body,
+          }}
+        />
       </div>
-      <div
-        class="advice-body"
-        dangerouslySetInnerHTML={{ __html: adviceText[selectedTextIndex].body }}
-      />
     </div>
   );
 };
