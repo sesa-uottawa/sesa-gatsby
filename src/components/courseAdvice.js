@@ -5,6 +5,7 @@ import { Grid, Button, Dialog, DialogTitle, DialogActions, DialogContent, Dialog
 
 const courses = [
    {
+      gridTitle: 'Linear Algebra',
       title: 'Introduction to Linear Algebra',
       body: `  
          <em>Intro to Linear Algebra (MAT 1341)</em> starts off as one of the most difficult 
@@ -21,6 +22,7 @@ const courses = [
       `
    },
    {
+      gridTitle: 'Intro To Computing I',
       title: `Introduction to Computing I`,
       body: `  
          Introduction to Computing I (ITI 1120), for most people this will be their first
@@ -44,6 +46,7 @@ const courses = [
       `
    },
    {
+      gridTitle: 'Intro to Computing II',
       title: `Introduction to Computing II`,
       body: `
          Introduction to Computing II (ITI 1121) starts off where Introduction to Computing I (ITI
@@ -63,7 +66,7 @@ const courses = [
          a friend or even us here at SESA.
          <br><br>
 
-         We cannot emphasize enough that this course IS difficult, and it WILL take a lot of time and effort, do not underestimate this course, it is a prerequisite for other courses later on so it is important that you understand the content.
+         We cannot emphasize enough that this course <b>IS</b> difficult, and it <b>WILL</b> take a lot of time and effort, do not underestimate this course, it is a prerequisite for other courses later on so it is important that you understand the content.
          <br><br>
 
          Here are some useful links to help you make the transition from Python to Java:
@@ -78,6 +81,7 @@ const courses = [
       `
    },
    {
+      gridTitle: 'Engineering Mechanics',
       title: 'Engineering Mechanics',
       body: `  
          Engineering mechanics requires a very technical mindset and a lot of patience as well to solve problems. 
@@ -94,6 +98,7 @@ const courses = [
       `
    },
    {
+      gridTitle: 'Physics',
       title: 'Physics 1',
       body: `  
       <strong>We highly recommend that you attend all classes for this course.</strong>
@@ -114,6 +119,7 @@ const courses = [
       `
    },
    {
+      gridTitle: 'Calculus I / Calculus II',
       title: 'Calculus',
       body: `  
          <strong>Calculus I</strong><br><br>
@@ -140,6 +146,7 @@ const courses = [
       `
    },
    {
+      gridTitle: 'Digital Systems',
       title: 'Digital Systems I',
       body: `  
          We will admit this is one of the easier courses for the semester but that does not mean you should take it lightly. 
@@ -153,6 +160,7 @@ const courses = [
       `
    },
    {
+      gridTitle: 'Discrete Mathematics',
       title: 'Discrete Mathematics for Computing',
       body: `  
          If you have taken discrete mathematics in highschool this course should be fairly easy for you. 
@@ -173,6 +181,7 @@ const courses = [
       `
    },
    {
+      gridTitle: 'Chemistry',
       title: 'Principles of Chemistry',
       body: `  
 			Principles of Chemistry (CHM 1311) consists mostly of a review from High
@@ -196,6 +205,7 @@ const courses = [
       `
    },
    {
+      gridTitle: 'Technical Report Writing',
       title: 'Technical Report Writing',
       body: `  
          The focal point of this course is to teach you how to structure and write technical reports. Which is why
@@ -211,6 +221,7 @@ const courses = [
       `
    },
    {
+      gridTitle: 'General Advice',
       title: 'General Advice',
       body: `  
 
@@ -239,8 +250,6 @@ const courses = [
       But don't put this off, the undergrad office works with defined deadlines, be responsible and look it up ahead of time.
       <br><br>
       Group studying sessions are amazing (if you dont get distracted)!! 
-      <br><br>
-      
       `
    },
 ];
@@ -282,65 +291,22 @@ class CourseAdvice extends React.Component{
          <div id='courseAdvice'>
             <h1>COURSE ADVICE</h1>
             <Grid container style= {{ width: `50rem`, margin: `0 auto`}} spacing={24}>
-               <Grid item xs={3} spacing={2}>
-                  <Button className='button' classes={{ root: this.props.classes.root}} onClick={ () => {this.handleClickOpen(0)} }>
-                     Linear Algebra
-                  </Button>
-               </Grid>
-               <Grid item xs={3} spacing={2}>
-                  <Button className='button' classes={{ root: this.props.classes.root}} onClick={ () => {this.handleClickOpen(1)} }>
-                     Intro to Computing I
-                  </Button>
-               </Grid>
-               <Grid item xs={3} spacing={2}>
-                  <Button className='button' classes={{ root: this.props.classes.root}} onClick={ () => {this.handleClickOpen(2)} }>
-                     Intro to Computing II
-                  </Button>
-               </Grid>
-               <Grid item xs={3} spacing={2}>
-                  <Button className='button' classes={{ root: this.props.classes.root}} onClick={ () => {this.handleClickOpen(3)} }>
-                     Engineering Mechanics
-                  </Button>
-               </Grid>
-               <Grid item xs={3} spacing={2}>
-                  <Button className='button' classes={{ root: this.props.classes.root}} onClick={ () => {this.handleClickOpen(4)} }>
-                     Physics
-                  </Button>
-               </Grid>
-               <Grid item xs={3} spacing={2}>
-                  <Button className='button' classes={{ root: this.props.classes.root}} onClick={ () => {this.handleClickOpen(5)} }>
-                     Calculus I / Calculus II
-                  </Button>
-               </Grid>
-               <Grid item xs={3} spacing={2}>
-                  <Button className='button' classes={{ root: this.props.classes.root}} onClick={ () => {this.handleClickOpen(6)} }>
-                     Digital Systems
-                  </Button>
-               </Grid>
-               <Grid item xs={3} spacing={2}>
-                  <Button className='button' classes={{ root: this.props.classes.root}} onClick={ () => {this.handleClickOpen(7)} }>
-                     Discrete Mathematics
-                  </Button>
-               </Grid>
-               <Grid item xs={3} spacing={2}>
-                  <Button className='button' classes={{ root: this.props.classes.root}} onClick={ () => {this.handleClickOpen(8)} }>
-                     Chemistry
-                  </Button>
-               </Grid>
-               <Grid item xs={3} spacing={2}>
-                  <Button className='button' classes={{ root: this.props.classes.root}} onClick={ () => {this.handleClickOpen(9)} }>
-                     Technical Report Writing
-                  </Button>
-               </Grid>
-               <Grid item xs={3} spacing={2}>
-                  <Button className='button' classes={{ root: this.props.classes.root}} onClick={ () => {this.handleClickOpen(10)} }>
-                     General Advice
-                  </Button>
-               </Grid>
-               <Grid item xs={3} spacing={2}>
-                  <Button className='button' classes={{ root: this.props.classes.root}} /* onClick={ this.handleClickOpen}*/>
-                  </Button>
-               </Grid>
+
+               {  
+                  courses.map((course, index) => {
+                     return(
+                        <Grid item xs={3} spacing={2}>
+                           <Button 
+                              className='course-button' 
+                              classes={{ root: this.props.classes.root}} 
+                              onClick={ () => {this.handleClickOpen(index)} }
+                           >
+                              { course.gridTitle }
+                           </Button>
+                        </Grid>
+                     );
+                  })
+               };
             </Grid>
 
             <Dialog
@@ -353,13 +319,12 @@ class CourseAdvice extends React.Component{
                <DialogContent>
                   <DialogContentText 
                      id="alert-dialog-description" 
-                     style={{fontFamily: "'Raleway', sans-serif", fontSize:'1.20em'}}
                      dangerouslySetInnerHTML={{ __html: courses[this.state.courseIndex].body }}
                   >
                   </DialogContentText>
                </DialogContent>
                <DialogActions>
-                  <Button variant="outlined" color="primary" style={{fontFamily: "'Raleway', sans-serif", fontSize:'1em'}} onClick={this.handleClose} autoFocus>
+                  <Button variant="outlined" color="primary" onClick={this.handleClose} autoFocus>
                   Ok
                   </Button>
                </DialogActions>
