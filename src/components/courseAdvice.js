@@ -7,13 +7,14 @@ const courses = [
    {
       title: 'Introduction to Linear Algebra',
       body: `  
-         Intro to Linear Algebra (MAT 1341) starts off as one of the most difficult 
+         <em>Intro to Linear Algebra (MAT 1341)</em> starts off as one of the most difficult 
          courses in 1st year. In MAT 1341 you will be learning about complex numbers, 
          vector and scalar product, projections, vector spaces, linear independence, 
          function spaces, solutions to systems of linear equations, matrix algebra, determinants, eigenvalues, eigenvectors, projections and linear transformations. 
          The course can move very quickly since it has a lot of material to cover. 
          <br><br>
-         For the mathematically inclined, the first half of the course will offer a good challenge. For those who struggle with math, you may find it quite difficult. However the second part of the course is much easier. If you are struggling with the first midterm's material, we encourage you to keep working at it, as it will get easier as the semester progresses. 
+         For the mathematically inclined, the first half of the course will offer a good challenge. For those who struggle with math, you may find it quite difficult. 
+         However the second part of the course is much easier. If you are struggling with the first midterm's material, we encourage you to keep working at it, as it will get easier as the semester progresses. 
          The assignments can be very challenging but offer good practice for the midterms/final. 
          We suggest to head down to the math help centre located in the basement of Marion and work on the assignments there. 
          You will be able to ask questions to the tutors as well as to other fellow classmates.
@@ -24,7 +25,7 @@ const courses = [
       body: `  
          Introduction to Computing I (ITI 1120), for most people this will be their first
          programming experience. This course uses the Python programming language. You will be learning about variable
-         types, classes, conditions, parameters, methods, loops, recursion, arrays, 2d
+         types, classes, conditions, parameters, methods, loops, recursion, arrays, 2D
          arrays and a small introduction to object oriented programming. This class at first
          seems simple and straightforward, however for those who have relatively no previous
          coding experience, it can prove to be quite challenging.
@@ -56,7 +57,7 @@ const courses = [
          Also the assignments can be done in
          teams of two. Since
          the assignments are designed to be done in teams, they can be quite difficult and
-         time consuming. The assignments get exponentially more time consuming and more difficult, make time for them and start earlier than you think you should! We suggest that you do NOT leave it to the last minute as you WILL
+         time consuming. The assignments get exponentially more time consuming and more difficult, make time for them and start earlier than you think you should! We suggest that you do <b>NOT</b> leave it to the last minute as you <b>WILL</b>
          have a hard time to complete it on time. Again if you need help with an assignment
          or understanding a concept from class, don't hesitate to ask a TA, your professor,
          a friend or even us here at SESA.
@@ -82,7 +83,10 @@ const courses = [
          Engineering mechanics requires a very technical mindset and a lot of patience as well to solve problems. 
          One mistake in any calculation will throw the answer off completely and do not expect all professors to be lenient in giving part marks. 
          To be fair, in the real world, that one small mistake can result in severe consequences (bridges/structures collapsing). 
-         We advise you to double or even triple check your answers before finishing midterms/exams. 
+         <br><br>
+         We advise you to double or even triple check your answers before finishing midterms/exams. Oh, and try to make sure you understand
+         how "moments" works before the midterm because that'll be really helpful!
+         <br><br>
          A solutions manual will definitely come in handy for assignments (most questions will be assigned from the textbook). 
          A little bit of googling may even help you find some solutions online 😉. Make sure to understand all questions thoroughly though. 
          Your exams/midterms will most likely consist of a few long answer questions combining all the concepts learnt throughout the course, 
@@ -114,7 +118,9 @@ const courses = [
       body: `  
          <strong>Calculus I</strong><br><br>
          The best advice we can give for Calculus I is <em>practice, practice, practice.</em> Don’t fall behind on
-         the homework questions, some of this material may start off as high school calculus but as new material is introduced the course gets significantly harder to handle if you don't start off with a good work ethic. Do ALL the homework questions as the material is covered in class and try to tackle extra problems if you have time. A lot of questions are going
+         the homework questions, some of this material may start off as high school calculus but as new material is introduced the course gets significantly harder to handle if you don't start off with a good work ethic. 
+         Do ALL the homework questions as the material is covered in class and try to tackle extra problems if you have time. 
+         A lot of questions are going
          to be assigned so last minute crunching will not work with this course. Wolframalpha will be extra handy
          especially if you are stuck on what steps to do when integrating. The majority of your study hours will be
          spent on this course so make sure to stay organized and not fall behind in class. <br><br>
@@ -128,12 +134,13 @@ const courses = [
          but there’s a possibility you will lose marks for not following their method.
          <br><br>
          
-         <strong>Note:</strong><br>Exams and tests will generally include one question from each section covered, so it's important to understand the material and be able to solve the math problems related to them. Online assignments are a great way to improve your grades, so don't skip out on them!<br>
+         <strong>Note:</strong><br>Exams and tests will generally include one question from each section covered, so it's important to understand the material and be able to solve the math problems related to them. 
+         Online assignments are a great way to improve your grades, so don't skip out on them!<br>
          DGD's are usually mandatory for both these classes, they will either take attendance or have pop quizzes, so go to the class from start to finish to be sure you won't miss out.
       `
    },
    {
-      title: 'Digital Systems',
+      title: 'Digital Systems I',
       body: `  
          We will admit this is one of the easier courses for the semester but that does not mean you should take it lightly. 
          Logic functions may seem simple at first but things will become more complex as you start building sequential circuits. 
@@ -179,7 +186,7 @@ const courses = [
 			students will have a 3 hour lab along with a lab report, 3 hours of lectures
 			and an assignment on the infamous Mastering Chemistry. Principles
 			of Chemistry is probably the most time consuming course you will encounter in your
-			first year. While the midterms/final can be quite difficult (can depend on professors sometimes), doing well on the
+			first year. While the midterms/final can be quite difficult (sometimes can depend on professors), doing well on the
 			assignments, lab reports and in class participation marks can give you a much
 			needed grade boost. We <em>recommend</em> working on the homework questions with some friends, it
 			will make them much easier, less time consuming and maybe a little fun. For some
@@ -191,8 +198,8 @@ const courses = [
    {
       title: 'Technical Report Writing',
       body: `  
-         The focal point of this course is to teach you how to structure and write technical reports. Which is why,
-         our final exam will be replaced by a final report in which you will demonstrate all the skills you have learned over the 
+         The focal point of this course is to teach you how to structure and write technical reports. Which is why
+         your final exam will be a final report in which you will demonstrate all the skills you have learned over the 
          course of the semester. This course will be easy if you attend your lectures and DGDs, 
          the profs will give examples in class as to their expectations, 
          so if you don't show up, you will miss out on some good tips! 
@@ -233,7 +240,7 @@ const courses = [
       <br><br>
       Group studying sessions are amazing (if you dont get distracted)!! 
       <br><br>
-
+      
       `
    },
 ];
@@ -241,10 +248,10 @@ const courses = [
 
 const styles = {
    root: {
-      backgroundColor: '#3f51b5',
+      backgroundColor: '#5c6bc0',
       fontFamily: 'inherit',
       color: 'white',
-      border: '0.20rem solid #3f51b5',
+      border: '0.20rem solid #5c6bc0',
       height: "12rem",
       width: "12rem",
       fontSize: '1rem',
@@ -342,7 +349,7 @@ class CourseAdvice extends React.Component{
                aria-labelledby="alert-dialog-title"
                aria-describedby="alert-dialog-description"
             >
-               <DialogTitle id="alert-dialog-title" style={{fontFamily: "'Raleway', sans-serif", fontSize:'1.25em'}}>{ courses[this.state.courseIndex].title }</DialogTitle>
+               <DialogTitle id="alert-dialog-title">{ courses[this.state.courseIndex].title }</DialogTitle>
                <DialogContent>
                   <DialogContentText 
                      id="alert-dialog-description" 
