@@ -23,6 +23,7 @@ const Header = ({ siteTitle }) => {
     mission: 'OUR_MISSION',
     events: 'EVENTS',
     newsLetter: 'NEWS_LETTER',
+    advice: 'FIRST_YEAR_TIPS'
   };
 
   return (
