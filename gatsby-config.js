@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'SESA | Software Engineering Student Association',
-    description: `SESA strives to enrich student life while building a networking platform in order to aid students in landing real world experiences.`,
+    description: `uOttawa SESA strives to enrich student life while building a networking platform in order to aid students in landing real world experiences.`,
     keywords:
       'SESA, uOttawa, Software Engineering Student Association, Club, Society, Events, First Year Advice, Join, University of Ottawa',
   },
