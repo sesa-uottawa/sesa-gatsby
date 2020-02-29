@@ -254,7 +254,6 @@ const courses = [
    },
 ];
 
-
 const styles = {
    root: {
       backgroundColor: '#5c6bc0',
@@ -291,11 +290,10 @@ class CourseAdvice extends React.Component{
          <div id='courseAdvice'>
             <h1>COURSE ADVICE</h1>
             <Grid container style= {{ width: `50rem`, margin: `0 auto`}} spacing={24}>
-
                {  
                   courses.map((course, index) => {
                      return(
-                        <Grid item xs={3} spacing={2}>
+                        <Grid item style={{ marginBottom:`1vh` }} xs={3}>
                            <Button 
                               className='course-button' 
                               classes={{ root: this.props.classes.root}} 
@@ -306,7 +304,7 @@ class CourseAdvice extends React.Component{
                         </Grid>
                      );
                   })
-               };
+               }
             </Grid>
 
             <Dialog
