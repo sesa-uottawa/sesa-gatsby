@@ -293,7 +293,7 @@ class CourseAdvice extends React.Component{
                {  
                   courses.map((course, index) => {
                      return(
-                        <Grid style={{ marginBottom:`1vh` }} xs={3}>
+                        <Grid item style={{ marginBottom:`1vh` }} xs={3}>
                            <Button 
                               className='course-button' 
                               classes={{ root: this.props.classes.root}} 
