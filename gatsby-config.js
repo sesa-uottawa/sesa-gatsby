@@ -6,6 +6,7 @@ module.exports = {
       'SESA, uOttawa, Software Engineering Student Association, Club, Society, Events, First Year Advice, Join, University of Ottawa',
   },
   plugins: [
+    'gatsby-plugin-material-ui',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
