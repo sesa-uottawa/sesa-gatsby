@@ -5,11 +5,15 @@ import EnrolmentAdvice from '../components/enrolmentAdvice';
 
 // CSS Imports
 import '../resources/styles/advicePage.css';
+import GeneralAdvice from '../components/generalAdvice'
 
 const AdvicePage = () => (
   <Layout>
     <div id="banner">
       <h1>FIRST YEAR TIPS</h1>
+    </div>
+    <div>
+      <GeneralAdvice /> 
     </div>
     <EnrolmentAdvice />
     <CourseAdvice />
