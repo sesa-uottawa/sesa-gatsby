@@ -36,22 +36,47 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            description
+            keywords
           }
         }
       }
     `}
     render={data => (
       <>
+        {/** Search Engine Optimization */}
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            {
+              name: 'description',
+              content: data.site.siteMetadata.description,
+            },
+            { name: 'keywords', content: data.site.siteMetadata.keywords },
+            { property: 'og:title', content: data.site.siteMetadata.title },
+            {
+              propery: 'og:description',
+              content: data.site.siteMetadata.description,
+            },
+            { property: 'og:type', content: 'website' },
+            { name: 'twitter:card', content: 'uOttawa SESA' },
+            { name: 'twitter:creator', content: 'SESA' },
+            { name: 'twitter:title', content: data.site.siteMetadata.title },
+            {
+              name: 'twitter:description',
+              content: data.site.siteMetadata.description,
+            },
           ]}
         >
+          {/** Raleway font import */}
+          <link
+            href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+            rel="stylesheet"
+          ></link>
           <html lang="en" />
         </Helmet>
         <Header siteTitle={'SESA'} />
+        { /** Material UI Theme */}
         <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>
       </>
     )}

@@ -3,24 +3,26 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import '@blueprintjs/core/lib/css/blueprint.css';
 
+// Icon Imports
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+
 import {
   Alignment,
   Button,
   Classes,
-  H5,
   Navbar,
   NavbarDivider,
   NavbarGroup,
   NavbarHeading,
-  Switch,
 } from '@blueprintjs/core';
 
 const Header = ({ siteTitle }) => {
-  const clickObject = {
-    mission: 'OUR_MISSION',
-    events: 'EVENTS',
-    newsLetter: 'NEWS_LETTER',
-  };
+  const headerLinks = [
+    { buttonText: 'OUR MISSION', link: '/#mission' },
+    { buttonText: 'EVENTS', link: '/#events' },
+    { buttonText: 'FIRST YEAR TIPS', link: '/advice' },
+  ];
 
   return (
     <Navbar fixedToTop>
@@ -31,15 +33,34 @@ const Header = ({ siteTitle }) => {
           </Link>
         </NavbarHeading>
         <NavbarDivider />
-        <Link to="/#mission" style={{ textDecoration: 'none' }}>
-          <Button className={Classes.MINIMAL} text="OUR MISSION" />
-        </Link>
-        <Link to="/#events" style={{ textDecoration: 'none' }}>
-          <Button className={Classes.MINIMAL} text="EVENTS" />
-        </Link>
-        <Link to="/newsletter" style={{ textDecoration: 'none' }}>
-          <Button className={Classes.MINIMAL} text="NEWS LETTER" />
-        </Link>
+        {headerLinks.map(headerLink => {
+          return (
+            <Link to={headerLink.link} style={{ textDecoration: 'none' }}>
+              <Button
+                className={Classes.MINIMAL}
+                text={headerLink.buttonText}
+              />
+            </Link>
+          );
+        })}
+      </NavbarGroup>
+      <NavbarGroup align={Alignment.RIGHT}>
+        <a
+          href="https://www.facebook.com/UOttawaSESA/"
+          style={{ textDecoration: 'none' }}
+        >
+          <Button className={Classes.MINIMAL}>
+            <FacebookIcon />
+          </Button>
+        </a>
+        <a
+          href="https://www.instagram.com/uottawasesa/"
+          style={{ textDecoration: 'none' }}
+        >
+          <Button className={Classes.MINIMAL}>
+            <InstagramIcon />
+          </Button>
+        </a>
       </NavbarGroup>
     </Navbar>
   );

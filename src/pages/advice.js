@@ -1,5 +1,9 @@
 import React from 'react';
 import Layout from '../components/layout';
+import CourseAdvice from '../components/courseAdvice'
+import EnrolmentAdvice from '../components/enrolmentAdvice';
+
+// CSS Imports
 import '../resources/styles/advicePage.css';
 import GeneralAdvice from '../components/generalAdvice'
 
@@ -11,6 +15,8 @@ const AdvicePage = () => (
     <div>
       <GeneralAdvice /> 
     </div>
+    <EnrolmentAdvice />
+    <CourseAdvice />
   </Layout>
 );
 
